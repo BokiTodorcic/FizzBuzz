@@ -2,7 +2,12 @@
 function fizzbuzz() {
   for (let i = 1; i <= 100; i++) {
     let text = "";
-    if (i % 15 === 0) {
+
+    if (i % 11 === 0) {
+      text = "Bong";
+      console.log(text);
+      continue;
+    } else if (i % 15 === 0) {
       text = "FizzBuzz";
     } else if (i % 5 === 0) {
       text = "Buzz";
