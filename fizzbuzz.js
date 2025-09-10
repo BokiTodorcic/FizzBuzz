@@ -4,17 +4,33 @@ function fizzbuzz() {
     let text = "";
 
     if (i % 11 === 0) {
-      text = "Bong";
+      i % 13 === 0 ? (text = "FezzBong") : (text = "Bong");
       console.log(text);
       continue;
     } else if (i % 15 === 0) {
-      text = "FizzBuzz";
+      if (i % 13 === 0) {
+        text = "FizzFezzBuzz";
+      } else {
+        text = "FizzBuzz";
+      }
     } else if (i % 5 === 0) {
-      text = "Buzz";
+      if (i % 13 === 0) {
+        text = "FezzBuzz";
+      } else {
+        text = "Buzz";
+      }
     } else if (i % 3 === 0) {
-      text = "Fizz";
+      if (i % 13 === 0) {
+        text = "FizzFezz";
+      } else {
+        text = "Fizz";
+      }
     } else if (i % 7 === 0) {
-      text = "Bang";
+      if (i % 13 === 0) {
+        text = "FezzBang";
+      } else {
+        text = "Bang";
+      }
     } else {
       text = i;
     }
