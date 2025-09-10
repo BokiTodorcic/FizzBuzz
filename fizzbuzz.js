@@ -1,6 +1,6 @@
 // This is our main function
 function fizzbuzz() {
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 255; i++) {
     let text = "";
 
     if (i % 11 === 0) {
@@ -37,6 +37,11 @@ function fizzbuzz() {
 
     if (text && text !== "Bang" && i % 7 === 0) {
       text += "Bang";
+    }
+
+    if (i % 17 === 0 && typeof text === "string") {
+      let tempArr = text.match(/.{4}/g);
+      text = tempArr.reverse().join("");
     }
 
     console.log(text);
