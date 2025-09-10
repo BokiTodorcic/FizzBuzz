@@ -1,15 +1,24 @@
 // This is our main function
 function fizzbuzz() {
-  for (let i = 0; i <= 100; i++) {
+  for (let i = 1; i <= 100; i++) {
+    let text = "";
     if (i % 15 === 0) {
-      console.log("FizzBuzz");
+      text = "FizzBuzz";
     } else if (i % 5 === 0) {
-      console.log("Buzz");
+      text = "Buzz";
     } else if (i % 3 === 0) {
-      console.log("Fizz");
+      text = "Fizz";
+    } else if (i % 7 === 0) {
+      text = "Bang";
     } else {
-      console.log(i);
+      text = i;
     }
+
+    if (text && text !== "Bang" && i % 7 === 0) {
+      text += "Bang";
+    }
+
+    console.log(text);
   }
 }
 
