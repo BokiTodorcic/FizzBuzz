@@ -1,7 +1,6 @@
-const fizzbuzz = require("../src/fizzbuzz.js");
+import fizzbuzz from "../src/fizzbuzz.js";
 
 // Testing results for only Buzz - I.e. only multiples of 5
-
 test("return Buzz for position 5", () => {
   let position = 5;
   const resultArray = fizzbuzz(position);

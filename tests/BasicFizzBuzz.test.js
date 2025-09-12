@@ -1,4 +1,4 @@
-const fizzbuzz = require("../src/fizzbuzz.js");
+import fizzbuzz from "../src/fizzbuzz.js";
 
 // Testing resuts with no words
 test("return 1 for position 1", () => {
@@ -18,4 +18,3 @@ test("return 19 for position 19", () => {
   const resultArray = fizzbuzz(position);
   expect(resultArray[position - 1]).toEqual(position);
 });
-10

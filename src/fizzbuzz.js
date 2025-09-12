@@ -1,5 +1,5 @@
 // This is our main function
-function fizzbuzz(position) {
+export default function fizzbuzz(position) {
   let resultArray = [];
 
   for (let i = 1; i <= position; i++) {
@@ -50,5 +50,3 @@ function fizzbuzz(position) {
   }
   return resultArray;
 }
-
-module.exports = fizzbuzz;

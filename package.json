@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "This is our first programming exercise in the bootcamp. We will write some code to play the game \"FizzBuzz\". The requirements for this game can be found [here](FizzBuzzSpec.md).",
   "main": "fizzbuzz.js",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
