@@ -1,0 +1,1 @@
+import { fizzbuzz } from "fizzbuzz.js";
