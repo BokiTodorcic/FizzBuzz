@@ -50,13 +50,18 @@ export default function fizzbuzz(position) {
     if (i % 3 === 0) {
       value.push("Fizz");
     }
+    if (i % 13 === 0) {
+      value.push("Fezz");
+    }
     if (i % 5 === 0) {
       value.push("Buzz");
     }
     if (i % 7 === 0) {
       value.push("Bang");
     }
-    if (i % 11 === 0) {
+    if (i % 11 === 0 && i % 13 === 0) {
+      value.push("Bong");
+    } else if (i % 11 === 0) {
       value = ["Bong"];
     }
 
