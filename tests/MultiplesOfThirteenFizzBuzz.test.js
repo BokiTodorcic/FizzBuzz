@@ -1,6 +1,6 @@
 import fizzbuzz from "../src/fizzbuzz.js";
 
-// Testing resuts for Bong - I.e. multiples of 13
+// Testing resuts for Fezz - I.e. multiples of 13
 test("return Fezz for position 13", () => {
   let position = 13;
   const resultArray = fizzbuzz(position);
