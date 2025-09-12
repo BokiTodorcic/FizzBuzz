@@ -4,7 +4,7 @@
   "description": "This is our first programming exercise in the bootcamp. We will write some code to play the game \"FizzBuzz\". The requirements for this game can be found [here](FizzBuzzSpec.md).",
   "main": "fizzbuzz.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

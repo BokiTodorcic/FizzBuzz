@@ -1,5 +1,5 @@
 // This is our main function
-export default function fizzbuzz() {
+function fizzbuzz() {
   for (let i = 1; i <= 255; i++) {
     let text = "";
 
@@ -48,5 +48,4 @@ export default function fizzbuzz() {
   }
 }
 
-// Now, we run the main function:
-fizzbuzz();
+module.exports = fizzbuzz;
