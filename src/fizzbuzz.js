@@ -1,51 +1,54 @@
 // This is our main function
-function fizzbuzz() {
-  for (let i = 1; i <= 255; i++) {
-    let text = "";
+function fizzbuzz(position) {
+  let resultArray = [];
+
+  for (let i = 1; i <= position; i++) {
+    let value = "";
 
     if (i % 11 === 0) {
-      i % 13 === 0 ? (text = "FezzBong") : (text = "Bong");
-      console.log(text);
+      i % 13 === 0 ? (value = "FezzBong") : (value = "Bong");
+      resultArray.push(value);
       continue;
     } else if (i % 15 === 0) {
       if (i % 13 === 0) {
-        text = "FizzFezzBuzz";
+        value = "FizzFezzBuzz";
       } else {
-        text = "FizzBuzz";
+        value = "FizzBuzz";
       }
     } else if (i % 5 === 0) {
       if (i % 13 === 0) {
-        text = "FezzBuzz";
+        value = "FezzBuzz";
       } else {
-        text = "Buzz";
+        value = "Buzz";
       }
     } else if (i % 3 === 0) {
       if (i % 13 === 0) {
-        text = "FizzFezz";
+        value = "FizzFezz";
       } else {
-        text = "Fizz";
+        value = "Fizz";
       }
     } else if (i % 7 === 0) {
       if (i % 13 === 0) {
-        text = "FezzBang";
+        value = "FezzBang";
       } else {
-        text = "Bang";
+        value = "Bang";
       }
     } else {
-      text = i;
+      value = i;
     }
 
-    if (text && text !== "Bang" && i % 7 === 0) {
-      text += "Bang";
+    if (value && value !== "Bang" && i % 7 === 0) {
+      value += "Bang";
     }
 
-    if (i % 17 === 0 && typeof text === "string") {
-      let tempArr = text.match(/.{4}/g);
-      text = tempArr.reverse().join("");
+    if (i % 17 === 0 && typeof value === "string") {
+      let tempArr = value.match(/.{4}/g);
+      value = tempArr.reverse().join("");
     }
 
-    console.log(text);
+    resultArray.push(value);
   }
+  return resultArray;
 }
 
 module.exports = fizzbuzz;
